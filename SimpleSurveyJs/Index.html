@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Resources/Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="Resources/JQuery/jquery-1.10.2.js"></script>
+    <title>Simple Survey</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-4">
+            <form method="post">
+                <fieldset>
+                    <legend>No file chosen...</legend>
+                    <input type="submit" value="Submit" class="btn btn-success" style="display: none" />
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <label>Choose a file to feed the survey:</label>
+            <input type="file" id="files" name="files[]" multiple />
+        </div>
+    </div>
+
+    <script>
+        function handleFileSelect(evt) {
+            var files = evt.target.files; // fileList object
+
+            // loop through the FileList.
+            for (var i = 0, f; f = files[i]; i++) {
+
+                var reader = new FileReader();
+
+                // capture the file information
+                reader.onload = (function (theFile) {
+                    return function (e) {
+                        // parse the XML file to a variable
+                        var xmlDoc = $.parseXML(e.target.result);
+
+                        // loop throught the questionNodes and generate HTML
+                        $(xmlDoc).find('question').each(function () {
+                            var questionText = $(this).find('questionText').text();
+                            $('input[type=submit]').before('<div class="form-group"><label>' + questionText + '</label><br />' + GenerateAnswers(this) + '</div>');
+                        });
+                    };
+                })(f);
+
+                // read in the xml file
+                reader.readAsText(f);
+
+                // change the legend text and show the submit button
+                $('legend').text('Survey Questions');
+                $('input[type=submit]').css('display', 'block');
+            }
+        }
+
+        // generates HTML for each answer in a given questionNode
+        function GenerateAnswers(questionNode) {
+            var radioName = 'radio' + $(questionNode).attr('id');
+            var radioId = 0;
+            var result = '';
+
+            $(questionNode).find('answerText').each(function () {
+                result += '<input type="radio" name="' + radioName + '" value="' + radioId + '" /><span> ' + $(this).text() + '</span><br />';
+                radioId++;
+            });
+
+            return result;
+        }
+
+        // fileSelect event
+        document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+        // submit button click event
+        $('input[type=submit]').click(function () {
+            alert('Congratulations! You just submitted the survey. Thank you.');
+        });
+    </script>
+</body>
+</html>

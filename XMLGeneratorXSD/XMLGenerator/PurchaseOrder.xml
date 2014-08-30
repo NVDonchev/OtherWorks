@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<purchase-order>
+  <po-number>3765231</po-number>
+  <po-date>2013-12-08</po-date>
+  <po-time>18:16:03</po-time>
+  <expected-ship-date>2013-12-09</expected-ship-date>
+  <shipping-detail>
+    <ship-to-name>ANGELA BOSLEY</ship-to-name>
+    <address>472 WHEALTON ROAD</address>
+    <city>HAMPTON</city>
+    <state>VA</state>
+    <zipcode>23666</zipcode>
+    <phone>7577688347</phone>
+    <shipping-method>Ground</shipping-method>
+  </shipping-detail>
+  <customer-name>ANGELA BOSLEY</customer-name>
+  <po-line>
+    <po-line-header>
+      <line-number>3</line-number>
+      <item-id>1006925</item-id>
+      <item-name>Twisted Cubic Zirconia Micro Cuff - 925 Sterling Silver Helix Piercing Cartilage Earring</item-name>
+      <handling-instructions/>
+      <handling-ind/>
+      <item-sell-price>9.99</item-sell-price>
+      <order-quantity>1</order-quantity>
+    </po-line-header>
+    <po-line-detail>
+      <po-line-status>NEW</po-line-status>
+      <quantity>1</quantity>
+    </po-line-detail>
+  </po-line>
+  <po-line>
+    <po-line-header>
+      <line-number>2</line-number>
+      <item-id>1006913</item-id>
+      <item-name>Black &amp; Clear Cubic Zirconia Huggie Micro Cuff - 925 Sterling Silver Helix Piercing Cartilage Earring</item-name>
+      <handling-instructions/>
+      <handling-ind/>
+      <item-sell-price>12.99</item-sell-price>
+      <order-quantity>1</order-quantity>
+    </po-line-header>
+    <po-line-detail>
+      <po-line-status>NEW</po-line-status>
+      <quantity>1</quantity>
+    </po-line-detail>
+  </po-line>
+  <po-line>
+    <po-line-header>
+      <line-number>7</line-number>
+      <item-id>1006911</item-id>
+      <item-name>BLUE &amp; AQUA Five Gem Micro Dangle - 925 Sterling Silver Helix Cartilage Earring</item-name>
+      <handling-instructions/>
+      <handling-ind/>
+      <item-sell-price>4.80</item-sell-price>
+      <order-quantity>1</order-quantity>
+    </po-line-header>
+    <po-line-detail>
+      <po-line-status>NEW</po-line-status>
+      <quantity>1</quantity>
+    </po-line-detail>
+  </po-line>
+  <po-line>
+    <po-line-header>
+      <line-number>6</line-number>
+      <item-id>1030450</item-id>
+      <item-name>Clear Bioplast Barbell - Blue CZ Journey Cartilage Piercing Earring</item-name>
+      <handling-instructions/>
+      <handling-ind/>
+      <item-sell-price>7.99</item-sell-price>
+      <order-quantity>1</order-quantity>
+    </po-line-header>
+    <po-line-detail>
+      <po-line-status>NEW</po-line-status>
+      <quantity>1</quantity>
+    </po-line-detail>
+  </po-line>
+  <po-line>
+    <po-line-header>
+      <line-number>5</line-number>
+      <item-id>1030375</item-id>
+      <item-name>Black CZ Angel Wings Bioplast Barbell Cartilage Earring Stud</item-name>
+      <handling-instructions/>
+      <handling-ind/>
+      <item-sell-price>8.99</item-sell-price>
+      <order-quantity>1</order-quantity>
+    </po-line-header>
+    <po-line-detail>
+      <po-line-status>NEW</po-line-status>
+      <quantity>1</quantity>
+    </po-line-detail>
+  </po-line>
+  <po-line>
+    <po-line-header>
+      <line-number>4</line-number>
+      <item-id>1002122</item-id>
+      <item-name>925 Sterling Silver BLACK &amp; ROSE DECADENCE Helix Cartilage Ear Stud Barbell - Cartilage Piercing LEFT EAR</item-name>
+      <handling-instructions/>
+      <handling-ind/>
+      <item-sell-price>11.99</item-sell-price>
+      <order-quantity>1</order-quantity>
+    </po-line-header>
+    <po-line-detail>
+      <po-line-status>NEW</po-line-status>
+      <quantity>1</quantity>
+    </po-line-detail>
+  </po-line>
+  <po-line>
+    <po-line-header>
+      <line-number>8</line-number>
+      <item-id>1020757</item-id>
+      <item-name>3mm Princess Ball .925 Sterling Silver Cartilage Earring Stud</item-name>
+      <handling-instructions/>
+      <handling-ind/>
+      <item-sell-price>8.99</item-sell-price>
+      <order-quantity>1</order-quantity>
+    </po-line-header>
+    <po-line-detail>
+      <po-line-status>NEW</po-line-status>
+      <quantity>1</quantity>
+    </po-line-detail>
+  </po-line>
+  <order-subtotal>65.74</order-subtotal>
+  <sales-tax>3.94</sales-tax>
+  <shipping-fees>2.99</shipping-fees>
+  <order-total>72.67</order-total>
+  <po-status>New</po-status>
+</purchase-order>

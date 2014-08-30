@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://seller.marketplace.sears.com/oms/v5" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="shipment-feed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="deprecated" type="xs:date" />
+        <xs:element name="shipment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="asn-number" type="xs:unsignedInt" />
+                    <xs:element name="po-number" type="xs:unsignedInt" />
+                    <xs:element name="po-date" type="xs:date" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="detail">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="tracking-number" type="xs:integer" />
+                    <xs:element name="ship-date" type="xs:date" />
+                    <xs:element name="shipping-carrier" type="xs:string" />
+                    <xs:element name="shipping-method" type="xs:string" />
+                    <xs:element maxOccurs="unbounded" name="package-detail">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="line-number" type="xs:unsignedByte" />
+                          <xs:element name="item-id" type="xs:unsignedInt" />
+                          <xs:element name="quantity" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

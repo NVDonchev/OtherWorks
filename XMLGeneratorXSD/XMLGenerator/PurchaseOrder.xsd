@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="purchase-order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="po-number" type="xs:string" minOccurs="0" />
+        <xs:element name="po-date" type="xs:string" minOccurs="0" />
+        <xs:element name="po-time" type="xs:string" minOccurs="0" />
+        <xs:element name="expected-ship-date" type="xs:string" minOccurs="0" />
+        <xs:element name="customer-name" type="xs:string" minOccurs="0" />
+        <xs:element name="order-subtotal" type="xs:string" minOccurs="0" />
+        <xs:element name="sales-tax" type="xs:string" minOccurs="0" />
+        <xs:element name="shipping-fees" type="xs:string" minOccurs="0" />
+        <xs:element name="order-total" type="xs:string" minOccurs="0" />
+        <xs:element name="po-status" type="xs:string" minOccurs="0" />
+        <xs:element name="shipping-detail" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ship-to-name" type="xs:string" minOccurs="0" />
+              <xs:element name="address" type="xs:string" minOccurs="0" />
+              <xs:element name="city" type="xs:string" minOccurs="0" />
+              <xs:element name="state" type="xs:string" minOccurs="0" />
+              <xs:element name="zipcode" type="xs:string" minOccurs="0" />
+              <xs:element name="phone" type="xs:string" minOccurs="0" />
+              <xs:element name="shipping-method" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="po-line" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="po-line-header" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="line-number" type="xs:string" minOccurs="0" />
+                    <xs:element name="item-id" type="xs:string" minOccurs="0" />
+                    <xs:element name="item-name" type="xs:string" minOccurs="0" />
+                    <xs:element name="handling-instructions" type="xs:string" minOccurs="0" />
+                    <xs:element name="handling-ind" type="xs:string" minOccurs="0" />
+                    <xs:element name="item-sell-price" type="xs:string" minOccurs="0" />
+                    <xs:element name="order-quantity" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="po-line-detail" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="po-line-status" type="xs:string" minOccurs="0" />
+                    <xs:element name="quantity" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="purchase-order" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

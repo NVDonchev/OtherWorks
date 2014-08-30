@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+  <question id="1">
+    <questionText>Is this a sample question 1?</questionText>
+    <answers>
+      <answerText choiceCounter="1">This is answer 1</answerText>
+      <answerText choiceCounter="0">This is answer 2</answerText>
+      <answerText choiceCounter="0">This is answer 3</answerText>
+    </answers>
+  </question>
+  <question id="2">
+    <questionText>Is this a sample question 2?</questionText>
+    <answers>
+      <answerText choiceCounter="0">This is answer 1</answerText>
+      <answerText choiceCounter="1">This is answer 2</answerText>
+      <answerText choiceCounter="0">This is answer 3</answerText>
+    </answers>
+  </question>
+  <question id="3">
+    <questionText>Is this a sample question 3?</questionText>
+    <answers>
+      <answerText choiceCounter="0">This is answer 1</answerText>
+      <answerText choiceCounter="0">This is answer 2</answerText>
+      <answerText choiceCounter="1">This is answer 3</answerText>
+    </answers>
+  </question>
+  <question id="4">
+    <questionText>Is this a sample question 4?</questionText>
+    <answers>
+      <answerText choiceCounter="0">This is answer 1</answerText>
+      <answerText choiceCounter="0">This is answer 2</answerText>
+      <answerText choiceCounter="1">This is answer 3</answerText>
+    </answers>
+  </question>
+  <question id="5">
+    <questionText>Is this a sample question 5?</questionText>
+    <answers>
+      <answerText choiceCounter="1">This is answer 1</answerText>
+      <answerText choiceCounter="0">This is answer 2</answerText>
+      <answerText choiceCounter="0">This is answer 3</answerText>
+    </answers>
+  </question>
+</questions>

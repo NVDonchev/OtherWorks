@@ -1,0 +1,39 @@
+﻿@model IList<SimpleSurveyWebsite.ViewModels.SurveyQuestion>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title>Simple Survey</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-4">
+            @using (Html.BeginForm())
+            {
+                <fieldset>
+                    <legend>Survey questions</legend>
+                    @foreach (var questionNode in Model)
+                    {
+                        int radioId = 0;
+                        <div class="form-group">
+                            <label for="">@questionNode.Text</label><br />
+                            @foreach (var answer in questionNode.Answers)
+                            {
+                                var radioName = "radio" + questionNode.Id;
+                                <input type="radio" name="@radioName" value="@radioId" /> @answer <br />
+                                radioId++;
+                            }
+                        </div>
+                    }
+                    <input type="submit" value="Submit" class="btn btn-success" />
+                </fieldset>
+            }
+        </div>
+    </div>
+</body>
+</html>

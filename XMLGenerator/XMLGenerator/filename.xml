@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pricing-feed xmlns:xsi="test" xsi:schemaLocation="test" xmlns="test">
+  <fbm-pricing>
+    <item item-id="test">
+      <standard-price>test</standard-price>
+      <map-price-indicator>test</map-price-indicator>
+    </item>
+  </fbm-pricing>
+</pricing-feed>
